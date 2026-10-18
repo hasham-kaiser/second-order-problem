@@ -1,0 +1,14 @@
+# Raw Kaggle data (download from Kaggle, see README)
+data/raw/
+
+# Jupyter and Python clutter
+.ipynb_checkpoints/
+__pycache__/
+
+# Local database files
+*.duckdb
+*.duckdb.wal
+
+# Windows clutter
+desktop.ini
+Thumbs.db
