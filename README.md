@@ -43,7 +43,7 @@ Analysis uses the 96,478 delivered orders, placed by 93,358 unique customers. Re
 | Make cohort retention a headline metric alongside revenue | Revenue grew through 2017 while repeat purchasing stayed below 1% in every cohort. Revenue alone hid the problem. |
 | Collect post-purchase data: marketing contact, discounts, browsing after the first order | Without it, the cause of low retention cannot be identified. |
 | Test re-engagement within 90 days of a first order, against a holdout group | 55% of second orders happen in that window. Start with the 14,573 one-time, recent, high spend customers. |
-| Target the 743 repeat, lapsed, high spend customers for win-back | They have already bought twice and spent the most. |
+| Target the 743 repeat, lapsed, high spend customers for win-back | They have bought on at least two different days and sit in the top 40% of spend. |
 | Keep delivery estimates conservative | Late orders average reviews as low as 1.70, even though delivery is not the main retention lever. |
 
 ## Question by Question
