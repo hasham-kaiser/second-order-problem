@@ -4,7 +4,7 @@ Why do 97.8% of customers on Olist, a Brazilian e-commerce marketplace, never pl
 
 **[Tableau dashboard](https://public.tableau.com/app/profile/hasham.kaiser1104/viz/TheSecondOrderProblem/TheSecondOrderProblem)** · **[Power BI dashboard](https://app.powerbi.com/view?r=eyJrIjoiMGNhNjViYmItOWRjZi00YjhmLTgxOGEtMDNmM2JhNWJkOTk2IiwidCI6IjlkZGFhY2ExLTM4OWYtNGNiMS1hMTEzLTA4MWJlNmNjMjVmYyIsImMiOjZ9)** · **[Full notebook](notebooks/second-order-problem.ipynb)** · **[SQL queries](sql/)**
 
-![Power BI dashboard](powerbi/dashboard.png)
+![Tableau dashboard](tableau/dashboard.png)
 
 ## Verdict
 
@@ -76,6 +76,8 @@ Each answer comes from one file in [`sql/`](sql/).
 - **Tableau** reads the summary tables the notebook exports to [`data/`](data/): KPI strip, monthly revenue, cohort retention heatmap, RFM segments, reviews by delivery timing and the first order comparison.
 - **Power BI** is built from the raw tables to show the modelling layer. Power Query stages and cleans the raw files, a star schema joins two fact tables (orders, order items) to three dimensions (customer, product, date), and nine DAX measures calculate the KPIs, including `CALCULATE` with filters and a `DATEADD` month-over-month measure. Every figure was checked against the SQL output before publishing.
 
+![Power BI dashboard](powerbi/dashboard.png)
+
 ![Power BI data model](powerbi/model.png)
 
 ## Definitions
@@ -106,6 +108,7 @@ data/        summary tables exported by the notebook, read by Tableau
 notebooks/   the full analysis
 powerbi/     Power BI file, PDF export, dashboard and model screenshots
 sql/         one query per question
+tableau/     Tableau dashboard screenshot
 ```
 
 ## Tools
