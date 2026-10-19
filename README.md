@@ -1,6 +1,6 @@
 # The Second Order Problem
 
-Why do 97.8% of customers on Olist, a Brazilian e-commerce marketplace, never place a second order? A SQL analysis of 99,441 orders across nine linked tables, published as a Tableau dashboard and a Power BI dashboard.
+Why do 97.8% of customers on Olist, a Brazilian e-commerce platform, never place a second order? A SQL analysis of 99,441 orders across nine linked tables, published as a Tableau dashboard and a Power BI dashboard.
 
 **[Tableau dashboard](https://public.tableau.com/app/profile/hasham.kaiser1104/viz/TheSecondOrderProblem/TheSecondOrderProblem)** · **[Power BI dashboard](https://app.powerbi.com/view?r=eyJrIjoiMGNhNjViYmItOWRjZi00YjhmLTgxOGEtMDNmM2JhNWJkOTk2IiwidCI6IjlkZGFhY2ExLTM4OWYtNGNiMS1hMTEzLTA4MWJlNmNjMjVmYyIsImMiOjZ9)** · **[Full notebook](notebooks/second-order-problem.ipynb)** · **[SQL queries](sql/)**
 
@@ -55,7 +55,7 @@ Each answer comes from one file in [`sql/`](sql/).
 | [00](sql/00_data_quality_checks.sql) | Is the data fit for analysis? | 96,478 of 99,441 orders were delivered. 547 orders have more than one review. 610 products have no category. | Reviews are averaged to one per order, and uncategorised products are kept and labelled, so no join duplicates or drops rows. |
 | [01](sql/01_monthly_revenue.sql) | How did monthly revenue change? | R$112k in January 2017, a R$988k peak in November 2017, then a plateau of R$826k to R$978k. | Growth came from new customers and stopped when acquisition did. |
 | [02](sql/02_category_revenue.sql) | Which categories drive revenue? | Health and beauty leads with 9.33%. The top five categories hold roughly 40% of revenue across 74. | No single category is a lever for growth. |
-| [03](sql/03_seller_league.sql) | How concentrated is revenue among sellers? | The top seller holds 1.72% of revenue and the top 20 about 21%. | A fragmented marketplace that depends on no single seller. |
+| [03](sql/03_seller_league.sql) | How concentrated is revenue among sellers? | The top seller holds 1.72% of revenue and the top 20 about 21%. | A fragmented platform that depends on no single seller. |
 | [04](sql/04_same_day_orders.sql) | How many customers split one visit into several orders? | 857 customers placed more than one delivered order on the same day. | Counted as one visit, so split checkouts are not mistaken for repeat purchases. |
 | [05](sql/05_repeat_rate.sql) | What share of customers came back? | 2,015 of 93,358, or 2.16%. | The central problem. |
 | [06](sql/06_days_to_second_order.sql) | How long until a second order? | A median of 74 days. | Re-engagement works on a timescale of months, not days. |
@@ -92,7 +92,7 @@ Each answer comes from one file in [`sql/`](sql/).
 - **No post-purchase data.** The dataset records orders, deliveries and reviews, but nothing on marketing contact, discounts or browsing, which are the factors most likely to explain retention.
 - **Associations, not causes.** The analysis is descriptive and no significance tests were run. Small differences, such as those between repeat and one-time buyers' first orders, should not be read as definitive.
 - **The repeat rate is likely understated.** Customers who first bought in mid-2018 had only weeks to return before the data ends, against a median return time of 74 days. The cohort matrix accounts for this; the overall 2.16% does not.
-- **Historical data.** The data covers 2016 to 2018 on one marketplace and may not reflect Olist today.
+- **Historical data.** The data covers 2016 to 2018 on one platform and may not reflect Olist today.
 
 ## How to Run
 
